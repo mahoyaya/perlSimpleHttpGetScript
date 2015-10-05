@@ -20,8 +20,7 @@ if( defined($ENV{'http_proxy'}) ) { if($ENV{'http_proxy' ne ""}){ $proxy_data = 
 if( defined($ENV{'HTTP_PROXY'}) ) { if($ENV{'HTTP_PROXY' ne ""}){ $proxy_data = $ENV{'HTTP_PROXY'}; } }
 
 ## test data
-#$proxy_data = 'http://112.78.3.75:3128';
-$url_data = 'http://ftp.riken.jp/Linux/centos/6.7/updates/x86_64/Packages/bash-4.1.2-33.el6_7.1.x86_64.rpm';
+#$proxy_data = 'http://192.168.0.1:8080';
 #$url_data = 'http://ftp.riken.jp/Linux/centos/6.7/os/x86_64/isolinux/splash.jpg';
 
 if(scalar(@ARGV) < 2){ &getHelp; }
